@@ -1,0 +1,158 @@
+/* Basic Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Body and Fonts */
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f0fdf0;
+    /* Light green background for nature theme */
+    color: #333333;
+    /* Main page structure - vertical layout */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+/* Header Styles */
+
+header {
+    background-color: #006400;
+    /* Dark green for header */
+    color: #ffffff;
+    padding: 15px;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* Main container - horizontal layout for sidebar and content */
+
+.container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    flex-grow: 1;
+    /* Takes up remaining space between header and footer */
+}
+
+
+/* Content sections */
+
+.intro,
+.events,
+.contact {
+    flex-grow: 1;
+}
+
+.sidebar {
+    background-color: #e8f5e8;
+    /* Soft green for sidebar */
+    padding: 20px;
+    border-radius: 8px;
+    flex: 0 0 250px;
+    /* Fixed width sidebar */
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul a {
+    text-decoration: none;
+    color: #006400;
+    /* Dark green for links */
+}
+
+.sidebar ul a:hover {
+    text-decoration: underline;
+}
+
+
+/* Flexbox for the event cards */
+
+.event-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.event-card {
+    background-color: #ffffff;
+    border: 2px solid #006400;
+    /* Dark green border */
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1 1 300px;
+    /* Grow, shrink, minimum 300px base */
+}
+
+.footer {
+    background-color: #006400;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+
+
+/* Form styles for the contact page */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+textarea {
+    padding: 10px;
+    border: 2px solid #006400;
+    /* Dark green border */
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    background-color: #006400;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    align-self: flex-start;
+    /* Button doesn't stretch full width */
+}
+
+button:hover {
+    background-color: #004c2c;
+    /* Darker green on hover */
+}
